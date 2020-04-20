@@ -47,7 +47,7 @@
                                                     <constraint firstAttribute="height" constant="70" id="NcC-DD-Nab"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <state key="normal" title="2">
+                                                <state key="normal" title="200">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -60,7 +60,7 @@
                                                     <constraint firstAttribute="width" constant="120" id="jg5-sJ-Qbz"/>
                                                     <constraint firstAttribute="height" constant="70" id="mIX-It-dwQ"/>
                                                 </constraints>
-                                                <state key="normal" title="5">
+                                                <state key="normal" title="500">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -73,7 +73,7 @@
                                                     <constraint firstAttribute="height" constant="70" id="Q0X-m0-kLA"/>
                                                     <constraint firstAttribute="width" constant="120" id="xaY-D4-L4L"/>
                                                 </constraints>
-                                                <state key="normal" title="15">
+                                                <state key="normal" title="1000">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -101,7 +101,7 @@
                                                     <constraint firstAttribute="width" constant="120" id="QcG-Mb-bNO"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <state key="normal" title="2">
+                                                <state key="normal" title="200">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -114,7 +114,7 @@
                                                     <constraint firstAttribute="width" constant="120" id="WUc-ai-wmM"/>
                                                     <constraint firstAttribute="height" constant="70" id="oEH-We-Y2x"/>
                                                 </constraints>
-                                                <state key="normal" title="5">
+                                                <state key="normal" title="500">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -127,7 +127,7 @@
                                                     <constraint firstAttribute="height" constant="70" id="ShE-pa-OgO"/>
                                                     <constraint firstAttribute="width" constant="120" id="UOQ-hb-GhW"/>
                                                 </constraints>
-                                                <state key="normal" title="15">
+                                                <state key="normal" title="1000">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -154,7 +154,7 @@
                                                     <constraint firstAttribute="height" constant="70" id="sRf-BD-q9k"/>
                                                     <constraint firstAttribute="width" constant="120" id="woy-Xl-2vU"/>
                                                 </constraints>
-                                                <state key="normal" title="2">
+                                                <state key="normal" title="200">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -167,7 +167,7 @@
                                                     <constraint firstAttribute="height" constant="70" id="AoD-MP-hVb"/>
                                                     <constraint firstAttribute="width" constant="120" id="WlJ-CW-LI1"/>
                                                 </constraints>
-                                                <state key="normal" title="5">
+                                                <state key="normal" title="500">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -180,7 +180,7 @@
                                                     <constraint firstAttribute="height" constant="70" id="NLK-Y9-7uM"/>
                                                     <constraint firstAttribute="width" constant="120" id="Ry9-bo-x8c"/>
                                                 </constraints>
-                                                <state key="normal" title="15">
+                                                <state key="normal" title="1000">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -238,15 +238,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lE-ri-CyG">
-                                <rect key="frame" x="76" y="741" width="25" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yZ-VY-S3i">
-                                <rect key="frame" x="317" y="741" width="25" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lE-ri-CyG">
+                                <rect key="frame" x="36" y="740" width="104" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -271,6 +264,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yZ-VY-S3i">
+                                <rect key="frame" x="281" y="740" width="96" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

@@ -105,10 +105,12 @@ Questions(question: "Function called to get the first character of String.", ans
         player2Label.alpha = 1.0
         answerField.text = ""
         answerMessage.text = ""
+        player1 = false
+        player2 = false
     }
     
     func addScore(player:UILabel){
-        let currentScore: Int = Int(player1Score.text!)!
+        let currentScore: Int = Int(player.text!)!
         
         player.text = "\(currentScore + qAndA[questionNumber].value)"
         
@@ -156,6 +158,8 @@ Questions(question: "Function called to get the first character of String.", ans
                 player1Score.alpha = 0.5
                 player2Label.alpha = 1.0
                 player2Score.alpha = 1.0
+                answerField.text = ""
+                answerMessage.text = ""
                 
             }
             else if player2 == true {
@@ -167,6 +171,8 @@ Questions(question: "Function called to get the first character of String.", ans
                 player2Score.alpha = 0.5
                 player1Label.alpha = 1.0
                 player1Score.alpha = 1.0
+                answerField.text = ""
+                answerMessage.text = ""
             }
             
         }
