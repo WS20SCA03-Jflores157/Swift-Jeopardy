@@ -47,16 +47,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     let qAndA: [Questions] =
     [
-Questions(question: "Inspector that lets you change the text font.", answer: "What is a Attributes Inspector",
+Questions(question: "Inspector that lets you change the text font.", answer: "What is a Attributes Inspector?",
           value: 200),
-Questions(question: "The name given to the parameter of a function.", answer: "What is a Argument Label", value: 200),
-Questions(question: "Data Type that has characters within double quotes", answer: "What is a String", value: 200),
-Questions(question: "Editor that lets you connect buttons and labels.", answer: "What is an Assistant Editor", value: 500),
-Questions(question: "A function that returns a value.", answer: "What is a return function", value: 500),
-Questions(question: "Function called to run a case insensitive comparison on strings.", answer: "What is .lowercased", value: 500),
-Questions(question: "Select your entire code and indent format all text.", answer: "What does command a and command i do to your code", value: 1000),
-Questions(question: "A function inside a struct that lets you change the properties.", answer: "What is a mutating func", value: 1000),
-Questions(question: "Function called to get the first character of String.", answer: "What is .startIndex", value: 1000)
+Questions(question: "The name given to the parameter of a function.", answer: "What is a Argument Label?", value: 200),
+Questions(question: "Data Type that has characters within double quotes", answer: "What is a String?", value: 200),
+Questions(question: "Editor that lets you connect buttons and labels.", answer: "What is an Assistant Editor?", value: 500),
+Questions(question: "A function that returns a value.", answer: "What is a return function?", value: 500),
+Questions(question: "Function called to run a case insensitive comparison on strings.", answer: "What is .lowercased?", value: 500),
+Questions(question: "Select your entire code and indent format all text.", answer: "What does command a and command i do to your code?", value: 1000),
+Questions(question: "A function inside a struct that lets you change the properties.", answer: "What is a mutating func?", value: 1000),
+Questions(question: "Function called to get the first character of String.", answer: "What is .startIndex?", value: 1000)
     
     
     ]
@@ -64,6 +64,8 @@ Questions(question: "Function called to get the first character of String.", ans
     var questionNumber: Int!
     var player1: Bool = false
     var player2: Bool = false
+    var questionCount: Int = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,6 +109,22 @@ Questions(question: "Function called to get the first character of String.", ans
         answerMessage.text = ""
         player1 = false
         player2 = false
+        questionCount += 1
+        
+    }
+    
+    func checkWinner(){
+        if questionCount == 9{
+            let player1: Int = Int(player1Score.text!)!
+            let player2: Int = Int(player2Score.text!)!
+            
+            if player1 > player2 {
+                player1Winner.text = "Winner"
+            }
+            else if player2 > player1 {
+                player2Winner.text = "Winner"
+            }
+        }
     }
     
     func addScore(player:UILabel){
@@ -121,6 +139,9 @@ Questions(question: "Function called to get the first character of String.", ans
         answerMessage.text = "That is Correct!"
     }
     
+
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -129,6 +150,8 @@ Questions(question: "Function called to get the first character of String.", ans
     func textFieldDidEndEditing(_ textField: UITextField) {
         let playerAnswer: String? = textField.text?.lowercased()
         
+      
+        
         if playerAnswer == qAndA[questionNumber].answer.lowercased() {
             
             
@@ -136,12 +159,14 @@ Questions(question: "Function called to get the first character of String.", ans
                 
                 addScore(player: player1Score)
                 resetUI()
+               checkWinner()
       
             }
             else if player2 == true {
                 
                 addScore(player: player2Score)
                 resetUI()
+               checkWinner()
             }
             
         }
@@ -159,7 +184,7 @@ Questions(question: "Function called to get the first character of String.", ans
                 player2Label.alpha = 1.0
                 player2Score.alpha = 1.0
                 answerField.text = ""
-                answerMessage.text = ""
+                
                 
             }
             else if player2 == true {
@@ -172,7 +197,7 @@ Questions(question: "Function called to get the first character of String.", ans
                 player1Label.alpha = 1.0
                 player1Score.alpha = 1.0
                 answerField.text = ""
-                answerMessage.text = ""
+                
             }
             
         }
